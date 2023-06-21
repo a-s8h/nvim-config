@@ -45,4 +45,11 @@ return require('packer').startup(function(use)
   use('mfussenegger/nvim-dap')
   use("rcarriga/nvim-dap-ui")
 
+  use({
+      "nvim-neotest/neotest",
+      requires = {
+          'rouge8/neotest-rust',
+      }
+  })
+
 end)
