@@ -21,14 +21,14 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('tpope/vim-fugitive')
 
-    use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v2.x',
-	  requires = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
+  use {
+      'VonHeikemen/lsp-zero.nvim',
+      branch = 'v2.x',
+      requires = {
+          -- LSP Support
+          {'neovim/nvim-lspconfig'},
+          {'williamboman/mason.nvim'},
+          {'williamboman/mason-lspconfig.nvim'},
 
 		  -- Autocompletion
 		  {'hrsh7th/nvim-cmp'},
@@ -41,4 +41,8 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+
+  use('mfussenegger/nvim-dap')
+  use("rcarriga/nvim-dap-ui")
+
 end)
