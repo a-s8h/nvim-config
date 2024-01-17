@@ -5,7 +5,13 @@ return {
         { 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
     },
     config = function()
-        require('telescope').setup({})
+        require('telescope').setup({
+            pickers = {
+                find_files = {
+                    theme = 'dropdown',
+                }
+            }
+        })
         require('telescope').load_extension('fzf')
         local builtin = require('telescope/builtin')
         vim.keymap.set('n', '<leader>p', builtin.find_files, {})
