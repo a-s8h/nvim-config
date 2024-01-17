@@ -31,5 +31,18 @@ return {
             vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
             vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
         end)
+        require('cmp').setup({
+            mapping = {
+                ['<C-d>'] = require('cmp').mapping.scroll_docs(-4),
+                ['<C-f>'] = require('cmp').mapping.scroll_docs(4),
+                ['<CR>'] = require('cmp').mapping.confirm({
+                    behavior = require('cmp').ConfirmBehavior.Replace,
+                    select = true,
+                }),
+            },
+            sources = {
+                { name = 'nvim_lsp' },
+            },
+        })
     end
 }
