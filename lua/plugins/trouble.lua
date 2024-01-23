@@ -16,5 +16,9 @@ return {
         vim.keymap.set("n", "]d", function()
             require("trouble").previous({ skip_groups = true, jump = true })
         end)
+
+        vim.keymap.set('n', 'gR', function()
+            require("trouble").toggle('lsp_references')
+        end)
     end
 }
