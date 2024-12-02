@@ -17,6 +17,7 @@ return {
                 "rust_analyzer",
                 "tsserver",
                 "clangd",
+                "zls"
             },
             handlers = {
                 lsp_zero.default_setup,
