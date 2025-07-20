@@ -2,7 +2,7 @@ return {
   'saghen/blink.cmp',
   build = 'cargo build --release',
   opts = {
-    keymap = { preset = 'super-tab' },
+    keymap = { preset = 'enter' },
     appearance = {
       nerd_font_variant = 'mono'
     },
