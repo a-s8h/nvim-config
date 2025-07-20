@@ -1,1 +1,1 @@
-vim.lsp.enable({'rust-analyzer', 'zls', 'tsls'})
+vim.lsp.enable({'rust-analyzer', 'zls', 'tsls', 'clangd'})
