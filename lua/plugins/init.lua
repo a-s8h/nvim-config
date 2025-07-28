@@ -1,10 +1,9 @@
 return {
     {
-        'AlexvZyl/nordic.nvim',
-        lazy = false,
-        priority = 1000,
+        "rose-pine/neovim",
+        name = "rose-pine",
         config = function()
-            require('nordic').load()
+            vim.cmd("colorscheme rose-pine-dawn")
         end
     },
     { "nvim-lua/plenary.nvim", name = "plenary" },
