@@ -1,9 +1,8 @@
 return {
     {
-        "rose-pine/neovim",
-        name = "rose-pine",
+        "rebelot/kanagawa.nvim",
         config = function()
-            vim.cmd("colorscheme rose-pine-dawn")
+            vim.cmd("colorscheme kanagawa-dragon")
         end
     },
     { "nvim-lua/plenary.nvim", name = "plenary" },
