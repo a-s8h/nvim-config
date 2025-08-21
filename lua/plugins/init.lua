@@ -6,5 +6,4 @@ return {
         end
     },
     { "nvim-lua/plenary.nvim", name = "plenary" },
-    "tpope/vim-fugitive",
 }
