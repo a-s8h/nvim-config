@@ -1,4 +1,5 @@
 require("config.set")
 require("config.remap")
 require("config.lsp")
+require("config.format")
 require("lazy-init")
