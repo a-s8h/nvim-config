@@ -5,5 +5,4 @@ return {
             vim.cmd("colorscheme kanagawa-dragon")
         end
     },
-    { "nvim-lua/plenary.nvim", name = "plenary" },
 }
